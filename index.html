@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>SugranSakhi Homemade - Authentic Taste of Home</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&family=Merriweather:wght@300;400;700;900&family=Poppins:wght@400;500;600;700&family=Mulish:wght@300;400;500;600&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+        <script>
+            tailwind.config = {
+                theme: {
+                    extend: {
+                        colors: {
+                            'cream': '#FDF8F3',
+                            'warm-yellow': '#F4E4BC',
+                            'clay-brown': '#8B5A3C',
+                            'subtle-red': '#C44536',
+                            'soft-orange': '#E8B4A0'
+                        },
+                        fontFamily: {
+                            'sans': ['Inter', 'sans-serif'],
+                            'serif': ['Playfair Display', 'serif'],
+                            'merriweather': ['Merriweather', 'serif'],
+                            'poppins': ['Poppins', 'sans-serif'],
+                            'mulish': ['Mulish', 'sans-serif']
+                        }
+                    }
+                }
+            }
+        </script>
+    </head>
+    <body class="font-sans bg-cream">
+        <!-- Navigation -->
+        <nav class="bg-white/90 backdrop-blur-sm fixed w-full z-50 shadow-sm">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex justify-between items-center py-4">
+                    <div class="flex items-center">
+                        <h1 class="text-2xl font-serif font-semibold text-clay-brown">SugranSakhi</h1>
+                    </div>
+                    <div class="hidden md:flex space-x-8">
+                        <a href="#home" class="text-clay-brown hover:text-subtle-red transition-colors">Home</a>
+                        <a href="#about" class="text-clay-brown hover:text-subtle-red transition-colors">About</a>
+                        <a href="#menu" class="text-clay-brown hover:text-subtle-red transition-colors">Menu</a>
+                        <a href="#contact" class="text-clay-brown hover:text-subtle-red transition-colors">Contact</a>
+                    </div>
+                    <div class="md:hidden">
+                        <button class="text-clay-brown">
+                            <i class="fas fa-bars text-xl"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Hero Section -->
+        <section id="home" class="relative min-h-screen flex items-center justify-center py-20">
+            <!-- Background image of Puran Poli -->
+            <div class="absolute inset-0 bg-cover bg-center bg-no-repeat" style="background-image: url('images/puran-poli.jpeg');"></div>
+            
+            <!-- Soft, transparent golden glow overlay for text visibility -->
+            <div class="absolute inset-0 bg-gradient-to-br from-amber-200/15 via-yellow-100/10 to-orange-200/20"></div>
+            
+            <!-- Subtle sunlight glow effect -->
+            <div class="absolute top-0 left-1/4 w-96 h-96 bg-yellow-200/20 rounded-full blur-3xl"></div>
+            <div class="absolute bottom-0 right-1/4 w-80 h-80 bg-orange-200/15 rounded-full blur-3xl"></div>
+            
+            <!-- Content container -->
+            <div class="relative z-10 text-center px-6 max-w-6xl mx-auto">
+                <!-- Large rectangle black box behind text -->
+                <div class="bg-black/65 py-6 px-8 rounded-xl w-full max-w-3xl mx-auto">
+                    <!-- Main headline -->
+                    <h1 class="text-4xl md:text-5xl font-serif font-semibold leading-tight text-[#FFF7E6] drop-shadow-lg">
+                        Taste the Tradition of Homemade Goodness
+                    </h1>
+                    
+                    <!-- Subheadline -->
+                    <p class="text-lg md:text-xl mt-4 text-[#FDE6A6] leading-relaxed font-libre font-medium drop-shadow-md">
+                        Fresh Puran Poli, Modak & More – From SugranSakhi Homemade
+                    </p>
+                    
+                    <!-- CTA Button -->
+                    <div class="mt-6">
+                        <a href="https://wa.me/917385183328?text=Hi! I'd like to order Puran Poli and other homemade items from SugranSakhi Homemade" class="inline-flex items-center bg-[rgb(22,163,74)] hover:bg-green-700 text-white px-9 py-3 rounded-full text-lg font-semibold transition-all duration-300 transform hover:scale-105 shadow-2xl">
+                            <i class="fab fa-whatsapp mr-2 text-xl"></i>
+                            Order Now on WhatsApp
+                        </a>
+                    </div>
+                    
+                    <!-- Additional visual elements -->
+                    <div class="mt-8 flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 sm:space-x-8">
+                        <div class="flex items-center text-[#FCF8EC] drop-shadow-md">
+                            <i class="fas fa-star text-xl mr-2 text-[#FDE6A6]"></i>
+                            <span class="text-lg font-libre font-medium">Fresh Daily</span>
+                        </div>
+                        <div class="flex items-center text-[#FCF8EC] drop-shadow-md">
+                            <i class="fas fa-heart text-xl mr-2 text-[#FDE6A6]"></i>
+                            <span class="text-lg font-libre font-medium">Made with Love</span>
+                        </div>
+                        <div class="flex items-center text-[#FCF8EC] drop-shadow-md">
+                            <i class="fas fa-leaf text-xl mr-2 text-[#FDE6A6]"></i>
+                            <span class="text-lg font-libre font-medium">100% Natural</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Decorative flower petal border -->
+                    <div class="mt-6 flex justify-center">
+                        <div class="flex items-center space-x-2">
+                            <div class="w-3 h-3 bg-[#FDE6A6] rounded-full"></div>
+                            <div class="w-8 h-1 bg-gradient-to-r from-[#FDE6A6] to-[#D98528] rounded-full"></div>
+                            <div class="w-3 h-3 bg-[#D98528] rounded-full"></div>
+                            <div class="w-8 h-1 bg-gradient-to-r from-[#D98528] to-[#FDE6A6] rounded-full"></div>
+                            <div class="w-3 h-3 bg-[#FDE6A6] rounded-full"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Festive decorative elements -->
+            <div class="absolute top-16 left-16 opacity-70">
+                <i class="fas fa-leaf text-[#4B6B31] text-3xl transform rotate-45 drop-shadow-lg"></i>
+            </div>
+            <div class="absolute top-20 right-20 opacity-70">
+                <i class="fas fa-star text-[#F6C66E] text-2xl drop-shadow-lg"></i>
+            </div>
+            <div class="absolute bottom-24 left-24 opacity-70">
+                <i class="fas fa-leaf text-[#4B6B31] text-2xl transform -rotate-12 drop-shadow-lg"></i>
+            </div>
+            <div class="absolute bottom-28 right-24 opacity-70">
+                <i class="fas fa-heart text-[#F6C66E] text-xl drop-shadow-lg"></i>
+            </div>
+            <div class="absolute top-1/3 left-8 opacity-60">
+                <i class="fas fa-flower text-[#4B6B31] text-lg transform rotate-90"></i>
+            </div>
+            <div class="absolute bottom-1/3 right-8 opacity-60">
+                <i class="fas fa-flower text-[#F6C66E] text-lg transform -rotate-90"></i>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="py-20 bg-white">
+            <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid md:grid-cols-2 gap-12 items-center">
+                    <div>
+                        <h2 class="text-4xl font-serif font-semibold text-clay-brown mb-6">Our Story</h2>
+                        <p class="text-lg text-gray-700 mb-6 leading-relaxed">
+                            Born from the heart of Maharashtra, SugranSakhi Homemade brings you the authentic flavors that have been passed down through generations. Our journey began in a small kitchen where love for traditional Indian cooking met the desire to share these precious recipes with the world.
+                        </p>
+                        <p class="text-lg text-gray-700 leading-relaxed">
+                            Every dish we create is a celebration of our rich cultural heritage, made with the same care and attention that our grandmothers put into their cooking. From the aromatic spices to the perfectly balanced flavors, each bite tells a story of tradition, love, and authenticity.
+                        </p>
+                    </div>
+                    <div class="relative">
+                        <div class="relative overflow-hidden rounded-2xl shadow-2xl transform hover:scale-105 transition-all duration-500">
+                            <img src="images/cook.jpeg" 
+                                alt="Traditional Indian Cooking" 
+                                class="w-full h-96 md:h-[500px] object-cover object-top">
+                            <!-- Decorative overlay -->
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent"></div>
+                            <!-- Decorative border -->
+                            <div class="absolute inset-0 border-4 border-warm-yellow/30 rounded-2xl"></div>
+                        </div>
+                        <!-- Decorative elements -->
+                        <div class="absolute -top-4 -right-4 w-16 h-16 bg-warm-yellow rounded-full flex items-center justify-center shadow-lg">
+                            <i class="fas fa-heart text-subtle-red text-xl"></i>
+                        </div>
+                        <div class="absolute -bottom-4 -left-4 w-12 h-12 bg-subtle-red rounded-full flex items-center justify-center shadow-lg">
+                            <i class="fas fa-star text-warm-yellow text-lg"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Special Dishes Section -->
+        <section id="menu" class="py-20 bg-gradient-to-br from-warm-yellow/20 to-orange-50 relative overflow-hidden">
+            <!-- Decorative elements -->
+            <div class="absolute top-0 left-0 w-full h-2 bg-gradient-to-r from-clay-brown via-subtle-red to-orange-500"></div>
+            <div class="absolute top-4 left-1/4 transform -translate-x-1/2">
+                <i class="fas fa-leaf text-green-600 text-2xl opacity-60"></i>
+            </div>
+            <div class="absolute top-8 right-1/4 transform translate-x-1/2">
+                <i class="fas fa-star text-yellow-500 text-xl opacity-60"></i>
+            </div>
+            <div class="absolute bottom-4 left-1/3 transform -translate-x-1/2">
+                <i class="fas fa-leaf text-green-600 text-xl opacity-60 rotate-45"></i>
+            </div>
+            
+            <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+                <!-- Section Header -->
+                <div class="text-center mb-16">
+                    <div class="inline-flex items-center bg-gradient-to-r from-clay-brown to-subtle-red text-white px-6 py-2 rounded-full mb-6">
+                        <i class="fas fa-heart mr-2"></i>
+                        <span class="font-medium">Homemade Specialties</span>
+                    </div>
+                    <h2 class="text-4xl md:text-5xl font-serif font-bold text-clay-brown mb-4">
+                        Our Special Dishes
+                    </h2>
+                    <p class="text-xl md:text-2xl text-gray-700 font-medium mb-2">Traditional Maharashtrian Delicacies</p>
+                    <div class="w-24 h-1 bg-gradient-to-r from-clay-brown to-subtle-red mx-auto mt-4"></div>
+                </div>
+
+                <!-- Festival Items Grid -->
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+                    <!-- Ukadiche Modak -->
+                    <div class="bg-white rounded-2xl shadow-lg overflow-hidden transform hover:scale-105 transition-all duration-300 border-2 border-warm-yellow/50 hover:border-warm-yellow">
+                        <div class="relative">
+                            <img src="images/ukadiche_modak.jpeg" 
+                                alt="Ukadiche Modak" 
+                                class="w-full h-48 object-cover">
+                            <div class="absolute top-3 right-3 bg-subtle-red text-white px-3 py-1 rounded-full text-sm font-medium">
+                                <i class="fas fa-star mr-1"></i>Popular
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold text-clay-brown mb-2">Ukadiche Modak</h3>
+                            <p class="text-gray-600 mb-4">Steamed coconut-jaggery dumplings wrapped in rice flour, a traditional Maharashtrian sweet.</p>
+                            <div class="flex items-center text-subtle-red">
+                                <i class="fas fa-heart mr-2"></i>
+                                <span class="text-sm font-medium">Traditional Sweet</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Puran Poli -->
+                    <div class="bg-white rounded-2xl shadow-lg overflow-hidden transform hover:scale-105 transition-all duration-300 border-2 border-warm-yellow/50 hover:border-warm-yellow">
+                        <div class="relative">
+                            <img src="images/puran-poli.jpeg" 
+                                alt="Puran Poli" 
+                                class="w-full h-48 object-cover">
+                            <div class="absolute top-3 right-3 bg-subtle-red text-white px-3 py-1 rounded-full text-sm font-medium">
+                                <i class="fas fa-star mr-1"></i>Signature
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold text-clay-brown mb-2">Puran Poli</h3>
+                            <p class="text-gray-600 mb-4">Sweet chana dal flatbread with ghee, a traditional Maharashtrian delicacy perfect for any occasion.</p>
+                            <div class="flex items-center text-subtle-red">
+                                <i class="fas fa-heart mr-2"></i>
+                                <span class="text-sm font-medium">Signature Dish</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Gulab Jamun -->
+                    <div class="bg-white rounded-2xl shadow-lg overflow-hidden transform hover:scale-105 transition-all duration-300 border-2 border-warm-yellow/50 hover:border-warm-yellow">
+                        <div class="relative">
+                            <img src="images/gulab-jamun.jpg" 
+                                alt="Gulab Jamun" 
+                                class="w-full h-48 object-cover">
+                            <div class="absolute top-3 right-3 bg-subtle-red text-white px-3 py-1 rounded-full text-sm font-medium">
+                                <i class="fas fa-star mr-1"></i>Special
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold text-clay-brown mb-2">Gulab Jamun</h3>
+                            <p class="text-gray-600 mb-4">Crispy coconut-jaggery stuffed pastry, deep-fried to golden perfection for any special occasion.</p>
+                            <div class="flex items-center text-subtle-red">
+                                <i class="fas fa-heart mr-2"></i>
+                                <span class="text-sm font-medium">Crispy Delight</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Rava Ladoo -->
+                    <div class="bg-white rounded-2xl shadow-lg overflow-hidden transform hover:scale-105 transition-all duration-300 border-2 border-warm-yellow/50 hover:border-warm-yellow">
+                        <div class="relative">
+                            <img src="images/rava_ladoo.jpg" 
+                                alt="Rava Ladoo" 
+                                class="w-full h-48 object-cover">
+                            <div class="absolute top-3 right-3 bg-subtle-red text-white px-3 py-1 rounded-full text-sm font-medium">
+                                <i class="fas fa-star mr-1"></i>Popular
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold text-clay-brown mb-2">Rava Ladoo</h3>
+                            <p class="text-gray-600 mb-4">Soft, melt-in-mouth semolina sweets with cardamom and nuts, a perfect treat for any time.</p>
+                            <div class="flex items-center text-subtle-red">
+                                <i class="fas fa-heart mr-2"></i>
+                                <span class="text-sm font-medium">Melt-in-Mouth</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Poha Chivda -->
+                    <div class="bg-white rounded-2xl shadow-lg overflow-hidden transform hover:scale-105 transition-all duration-300 border-2 border-warm-yellow/50 hover:border-warm-yellow">
+                        <div class="relative">
+                            <img src="images/poha_chivada.jpg" 
+                                alt="Poha Chivda" 
+                                class="w-full h-48 object-cover">
+                            <div class="absolute top-3 right-3 bg-subtle-red text-white px-3 py-1 rounded-full text-sm font-medium">
+                                <i class="fas fa-star mr-1"></i>Snack
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold text-clay-brown mb-2">Poha Chivda</h3>
+                            <p class="text-gray-600 mb-4">Light crunchy snack made with flattened rice, nuts, and spices - perfect for tea time or any occasion.</p>
+                            <div class="flex items-center text-subtle-red">
+                                <i class="fas fa-heart mr-2"></i>
+                                <span class="text-sm font-medium">Crunchy Snack</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Special Offer Card -->
+                    <div class="bg-gradient-to-br from-clay-brown to-subtle-red rounded-2xl shadow-lg overflow-hidden transform hover:scale-105 transition-all duration-300">
+                        <div class="p-8 text-center text-white">
+                            <div class="w-20 h-20 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-6">
+                                <i class="fas fa-gift text-3xl"></i>
+                            </div>
+                            <h3 class="text-2xl font-bold mb-4">Special Combo</h3>
+                            <p class="text-lg mb-6">Order all 5 items together and get 15% off!</p>
+                            <div class="bg-white/20 rounded-lg p-4 mb-6">
+                                <p class="text-sm">Perfect for family gatherings and special occasions</p>
+                            </div>
+                            <div class="text-2xl font-bold">₹999</div>
+                            <div class="text-sm opacity-80 line-through">₹1,199</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CTA Section -->
+                <div class="text-center">
+                    <div class="bg-white rounded-2xl shadow-xl p-8 max-w-2xl mx-auto">
+                        <h3 class="text-2xl font-serif font-bold text-maroon-800 mb-4">
+                            <i class="fas fa-om mr-3 text-saffron-600"></i>
+                            Ready to Celebrate with Ganpati Bappa?
+                        </h3>
+                        <p class="text-gray-600 mb-6">Pre-order your festive favorites and make this Ganpati celebration truly special with homemade goodness.</p>
+                                                    <a href="https://wa.me/917385183328?text=Hi! I'd like to pre-order Ganpati festival items from SugranSakhi Homemade" 
+                        class="inline-flex items-center bg-green-600 hover:bg-green-700 text-white px-8 py-4 rounded-full text-lg font-semibold transition-all duration-300 transform hover:scale-105 shadow-2xl">
+                            <i class="fab fa-whatsapp mr-3 text-xl"></i>
+                            Pre-order Now on WhatsApp
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why Choose Us Section -->
+        <section class="py-20 bg-white">
+            <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl font-serif font-semibold text-clay-brown mb-4">Why Choose Us</h2>
+                    <p class="text-xl text-gray-600">The SugranSakhi difference</p>
+                </div>
+                <div class="grid md:grid-cols-3 gap-8">
+                    <!-- Made with Love -->
+                    <div class="text-center">
+                        <div class="bg-warm-yellow w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6">
+                            <i class="fas fa-heart text-3xl text-subtle-red"></i>
+                        </div>
+                        <h3 class="text-2xl font-semibold text-clay-brown mb-4">Made with Love</h3>
+                        <p class="text-gray-600 leading-relaxed">Every dish is prepared with the same love and care that goes into cooking for your own family. We believe food tastes better when made with heart.</p>
+                    </div>
+
+                    <!-- Homemade Fresh -->
+                    <div class="text-center">
+                        <div class="bg-warm-yellow w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6">
+                            <i class="fas fa-leaf text-3xl text-subtle-red"></i>
+                        </div>
+                        <h3 class="text-2xl font-semibold text-clay-brown mb-4">Homemade Fresh</h3>
+                        <p class="text-gray-600 leading-relaxed">We prepare everything fresh daily, just like you would at home. No pre-made sauces or frozen ingredients - only the freshest produce and spices.</p>
+                    </div>
+
+                    <!-- No Preservatives -->
+                    <div class="text-center">
+                        <div class="bg-warm-yellow w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6">
+                            <i class="fas fa-shield-alt text-3xl text-subtle-red"></i>
+                        </div>
+                        <h3 class="text-2xl font-semibold text-clay-brown mb-4">No Preservatives</h3>
+                        <p class="text-gray-600 leading-relaxed">We use only natural ingredients and traditional cooking methods. No artificial preservatives, colors, or flavors - just pure, authentic taste.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Customer Reviews Section -->
+        <section class="py-20 bg-cream">
+            <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl font-serif font-semibold text-clay-brown mb-4">What Our Customers Say</h2>
+                    <p class="text-xl text-gray-600">Real feedback from real food lovers</p>
+                </div>
+                <div class="grid md:grid-cols-3 gap-8">
+                    <!-- Review 1 - Puran Poli -->
+                    <div class="bg-white p-8 rounded-2xl shadow-lg">
+                        <div class="flex text-warm-yellow mb-4">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="text-gray-700 mb-6 italic">"I ordered Puran Poli for our family gathering and everyone was amazed! The chana dal filling is perfectly spiced with cardamom, and the ghee makes it melt in your mouth. You can taste the freshness in every bite - no artificial flavors, just pure homemade goodness."</p>
+                        <div class="flex items-center">
+                            <div class="w-12 h-12 bg-soft-orange rounded-full flex items-center justify-center mr-4">
+                                <span class="text-white font-semibold">S</span>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-clay-brown">Sunita Deshmukh</h4>
+                                <p class="text-gray-500 text-sm">Grandmother</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Review 2 - Gulab Jamun -->
+                    <div class="bg-white p-8 rounded-2xl shadow-lg">
+                        <div class="flex text-warm-yellow mb-4">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="text-gray-700 mb-6 italic">"The Gulab Jamun is absolutely divine! Crispy on the outside, soft and juicy inside, soaked in the perfect sugar syrup. It's not overly sweet like store-bought ones. You can tell it's made fresh daily with quality ingredients. Perfect for any celebration!"</p>
+                        <div class="flex items-center">
+                            <div class="w-12 h-12 bg-soft-orange rounded-full flex items-center justify-center mr-4">
+                                <span class="text-white font-semibold">R</span>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-clay-brown">Rajesh Kulkarni</h4>
+                                <p class="text-gray-500 text-sm">Food Lover</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Review 3 - Poha Chivda -->
+                    <div class="bg-white p-8 rounded-2xl shadow-lg">
+                        <div class="flex text-warm-yellow mb-4">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="text-gray-700 mb-6 italic">"The Poha Chivda is absolutely addictive! Perfectly crispy with the right amount of spices, curry leaves, and peanuts. It's not oily like the packaged ones. My kids love it as an evening snack, and it's so much healthier than chips. Tastes exactly like the chivda my grandmother used to make during Diwali."</p>
+                        <div class="flex items-center">
+                            <div class="w-12 h-12 bg-soft-orange rounded-full flex items-center justify-center mr-4">
+                                <span class="text-white font-semibold">K</span>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-clay-brown">Kavita Sharma</h4>
+                                <p class="text-gray-500 text-sm">Health Conscious Mom</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer id="contact" class="bg-clay-brown text-white py-16">
+            <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid md:grid-cols-3 gap-8">
+                    <!-- Contact Info -->
+                    <div>
+                        <h3 class="text-2xl font-serif font-semibold mb-6">SugranSakhi Homemade</h3>
+                        <div class="space-y-4">
+                            <div class="flex items-center">
+                                <i class="fas fa-phone mr-3 text-warm-yellow"></i>
+                                <span>+91 73851 83328</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fas fa-envelope mr-3 text-warm-yellow"></i>
+                                <span>pre-order@sugransakhi.com</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fas fa-map-marker-alt mr-3 text-warm-yellow"></i>
+                                <span>Thane, Maharashtra, India</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Quick Links -->
+                    <div>
+                        <h3 class="text-xl font-semibold mb-6">Quick Links</h3>
+                        <div class="space-y-3">
+                            <a href="#home" class="block hover:text-warm-yellow transition-colors">Home</a>
+                            <a href="#about" class="block hover:text-warm-yellow transition-colors">About Us</a>
+                            <a href="#menu" class="block hover:text-warm-yellow transition-colors">Our Menu</a>
+                            <a href="#contact" class="block hover:text-warm-yellow transition-colors">Contact</a>
+                        </div>
+                    </div>
+
+                    <!-- Social & Order -->
+                    <div>
+                        <h3 class="text-xl font-semibold mb-6">Connect With Us</h3>
+                        <div class="space-y-4">
+                            <a href="https://wa.me/917385183328" class="inline-flex items-center bg-green-600 hover:bg-green-700 text-white px-6 py-3 rounded-full transition-colors">
+                                <i class="fab fa-whatsapp mr-2"></i>
+                                Order on WhatsApp
+                            </a>
+                            <div class="flex space-x-4">
+                                <a href="#" class="text-2xl hover:text-warm-yellow transition-colors">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                                <a href="#" class="text-2xl hover:text-warm-yellow transition-colors">
+                                    <i class="fab fa-facebook"></i>
+                                </a>
+                                <a href="#" class="text-2xl hover:text-warm-yellow transition-colors">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="border-t border-gray-600 mt-12 pt-8 text-center">
+                    <p>&copy; 2024 SugranSakhi Homemade. All rights reserved. Made with ❤️ in India.</p>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Smooth scrolling script -->
+        <script>
+            // Smooth scrolling for navigation links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const target = document.querySelector(this.getAttribute('href'));
+                    if (target) {
+                        target.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    }
+                });
+            });
+
+            // Add scroll effect to navigation
+            window.addEventListener('scroll', function() {
+                const nav = document.querySelector('nav');
+                if (window.scrollY > 100) {
+                    nav.classList.add('bg-white/95');
+                } else {
+                    nav.classList.remove('bg-white/95');
+                }
+            });
+        </script>
+    </body>
+</html>
